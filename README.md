@@ -1,9 +1,9 @@
 # Overview
 
 SATS(SATOSHI Token) is a "stablecoin" which 1 SATS is always pegged to one hundred millionth of 1 Bitcoin. <br>
-SATS is mintable and redeemable against RBTC(Rsk Smart Bitcoin) on SATOSHI token contract on RSK blcokchain.
+SATS is mintable and redeemable against RBTC(Rsk Smart Bitcoin) on RSK blcokchain.
 
-# Features
+## Features
 - RBTC held in the SATOSHI contract can be flashlonable.
 - 10% of the totalsupply of SAT is flashmintable.
 
