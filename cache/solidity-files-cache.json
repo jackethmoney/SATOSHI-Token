@@ -1,0 +1,507 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/jack-sw/Codes/SATOSHI/contracts/interfaces/ISATOSHI.sol": {
+      "lastModificationDate": 1628598251884,
+      "contentHash": "b2d2cd6bb31cf73919957267e407053a",
+      "sourceName": "contracts/interfaces/ISATOSHI.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./ISatsFlashLender.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "ISATOSHI"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1623751873399,
+      "contentHash": "dc33f115b06a62f5f6c62af735b8302c",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/contracts/interfaces/ISatsFlashLender.sol": {
+      "lastModificationDate": 1628594630204,
+      "contentHash": "57dae5c48fd7a588da34d1726615cb25",
+      "sourceName": "contracts/interfaces/ISatsFlashLender.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ISatsFlashBorrower.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "ISatsFlashLender"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/contracts/interfaces/ISatsFlashBorrower.sol": {
+      "lastModificationDate": 1628587794851,
+      "contentHash": "d6ca4888a058fcfa684d81a7e87e6b4c",
+      "sourceName": "contracts/interfaces/ISatsFlashBorrower.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "ISatsFlashBorrower"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/contracts/tests/FlashTest.sol": {
+      "lastModificationDate": 1628596753725,
+      "contentHash": "49444687e35ea12e58b1f6d569bc7cb9",
+      "sourceName": "contracts/tests/FlashTest.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/ISATOSHI.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "FlashTest"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1623751172341,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/contracts/tests/FlashMintTest.sol": {
+      "lastModificationDate": 1628594956511,
+      "contentHash": "cd78d77ccf61915b0810e10c0e96fee4",
+      "sourceName": "contracts/tests/FlashMintTest.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ISATOSHI.sol",
+        "../interfaces/ISatsFlashBorrower.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "FlashMintTest"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/contracts/SATOSHI.sol": {
+      "lastModificationDate": 1628598283121,
+      "contentHash": "f8bf52d23ac0f4d72d0b888559aab932",
+      "sourceName": "contracts/SATOSHI.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "./interfaces/ISATOSHI.sol",
+        "./interfaces/ISatsFlashBorrower.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "BorrowerProxy",
+        "SATOSHI"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1623751873396,
+      "contentHash": "03d462fc1bc3dfb73bd00e12550a4d32",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1623751873428,
+      "contentHash": "fae58f64850246a4f1ae3b24dfb59efa",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1623751873414,
+      "contentHash": "4aa3666bcb901742a13788399b2d9363",
+      "sourceName": "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1623751873395,
+      "contentHash": "8c11003301d2d2e03cddf22cc4e75ba6",
+      "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1623751873394,
+      "contentHash": "079b4185b8794e6abce0f0c79ffeb8f5",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/jack-sw/Codes/SATOSHI/contracts/Migrations.sol": {
+      "lastModificationDate": 1624201274461,
+      "contentHash": "36ee04fc5f2cfec69083fc8382e128f0",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.6.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.11"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    }
+  }
+}
