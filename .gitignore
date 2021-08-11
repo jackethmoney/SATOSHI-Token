@@ -1,5 +1,6 @@
 abi
-address
+addresses
+artifacts
 scripts
 src
 test/satoshi-test_fee.js
