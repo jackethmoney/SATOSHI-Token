@@ -1,9 +1,11 @@
 abi
-address
+addresses
+artifacts
 scripts
 src
 test/satoshi-test_fee.js
+node_modules
 
 // credential info
 secret.json
-node_modules
+
