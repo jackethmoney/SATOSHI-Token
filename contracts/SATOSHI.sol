@@ -47,26 +47,7 @@ contract SATOSHI is ERC20, ISATOSHI, ReentrancyGuard {
         borrower = new BorrowerProxy();
         borrower_ads = address(borrower);
     }
-
-    // Get Functions
-    function getRBTCBalance() public override view returns(uint) {
-        return address(this).balance;
-    }
-
-    function getSATSandRBTCratio() public override view returns(uint) {
-        return totalSupply().mul(DECIMAL_18).div(_100m).div(getRBTCBalance());
-    }
-
-    // Flashmintable SATS is limited to the one tenth of the totalsupply
-    function getCeiling() public override view returns(uint) {
-        return totalSupply().div(10);
-    }
-
-    function transferFrom_(address sender, address recipient, uint256 amount) public returns (bool) {
-        require(recipient != address(this));
-        _transfer(sender, recipient, amount);
-    }
-
+    
     // Deposit
     function depositRBTC() public payable override nonReentrant {
         uint sats_amt = msg.value.mul(_100m);
@@ -139,6 +120,11 @@ contract SATOSHI is ERC20, ISATOSHI, ReentrancyGuard {
 
         emit FlashMintSATS(_amount, address(_borrower), _data);
         return true;
+    }
+    
+     // Flashmintable SATS is limited to the one tenth of the totalsupply
+    function getCeiling() public override view returns(uint) {
+        return totalSupply().div(10);
     }
 
     receive() external payable {}
